@@ -26,22 +26,31 @@ Amazon OpenSearch (Search & Analytics Engine)
 - Kibana (Visualization & Dashboarding)
 
 
-**Modern data Pipeline Tool:** https://www.mage.ai/
-
-**Contribute to this project here:** https://github.com/mage-ai/mage-ai
-
 ## Dataset Used
-TLC Trip Record Data
-Yellow and green taxi trip records include fields capturing pick-up and drop-off dates/times, pick-up and drop-off locations, trip distances, itemized fares, rate types, payment types, and driver-reported passenger counts. 
+NYC Motor Vehicle Collisions Dataset
 
-Here is the dataset used in the video - https://github.com/darshilparmar/uber-data-engineering-mage-project/blob/main/data/uber_data.csv
+https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95/about_data
 
-### More Info About Dataset
-1. Original Data Source - https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
-2. Data Dictionary - https://www.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_yellow.pdf
+This dataset contains detailed crash records including:
 
-## Data Model
-![Data model image](data_model.jpeg)
+- Crash date and time
+- Location (borough, zip, latitude, longitude)
+- Contributing factors
+- Vehicle types
+- Injury and fatality counts
+- Weather conditions
+
+## Data Pipeline (ETL Flow)
+- Extract – Apache NiFi
+ - Uses InvokeHTTP to fetch data from NYC Open Data API
+ - Continuously ingests real-time crash data
+- Transform – Apache NiFi
+ - EvaluateJSONPath → Extract relevant attributes
+ - ReplaceText → Convert JSON → CSV
+ - MergeContent → Combine records into structured datasets
+- Load – Amazon S3
+ - Processed CSV files stored in S3
+ - Acts as a scalable data lake
 
 ## Scripts for project
 1. [Extract Python File](mage-files/extract.py)
