@@ -1,7 +1,11 @@
-# Uber Data Analytics | Modern Data Engineering GCP Project
+# Crash Analytics on New York City Open Data using Tools of AWS, Apache Nifi and ELK(Elasticsearch Logstash Kibana) Framework
 
 ## Introduction
-This project dives into the world of Uber data analytics using modern data engineering practices on Google Cloud Platform (GCP). We'll leverage tools like Mage.ai for building an ETL pipeline, BigQuery for data warehousing, Looker Studio for data visualization, and Cloud Storage for managing data throughout the process.
+This project explores NYC crash data analytics using modern data engineering practices on AWS. It demonstrates how to build a scalable, production-oriented data pipeline that automates data ingestion, transformation, storage, and visualization.
+
+The pipeline leverages Apache NiFi for ETL orchestration, Amazon S3 for data lake storage, Amazon EMR (with Logstash) for processing, and Amazon OpenSearch + Kibana for real-time analytics and visualization.
+
+The goal is to transform raw API data into analytics-ready datasets and generate actionable insights through interactive dashboards.
 
 ## Architecture
 ![Project Architecture](architecture.jpg)
