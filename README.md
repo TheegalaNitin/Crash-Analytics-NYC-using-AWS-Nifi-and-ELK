@@ -8,17 +8,23 @@ The pipeline leverages Apache NiFi for ETL orchestration, Amazon S3 for data lak
 The goal is to transform raw API data into analytics-ready datasets and generate actionable insights through interactive dashboards.
 
 ## Architecture
-![Project Architecture](Architecture of NYC.png)
+![Project Architecture](https://github.com/TheegalaNitin/Crash-Analytics-NYC-using-AWS-Nifi-and-ELK/blob/main/Architecture%20of%20NYC.png)
 
 ## Technology Used
-1. Programming Language - Python
-2. Scripting Language - SQL
-3. Google Cloud Platform
-   -  BigQuery
-   -  Cloud Storage
-   -  Looker Studio
-   -  Compute Instance
-4. Mage.AI (modern data pipeline tool)
+1. Programming & Query Languages
+- Python
+- SQL
+2. Cloud Platform – AWS
+- Amazon EC2 (NiFi Deployment)
+- Amazon S3 
+- Amazon EMR 
+Amazon OpenSearch (Search & Analytics Engine)
+3. Data Engineering Tools
+- Apache NiFi (Data Ingestion & ETL)
+- Apache Spark (via EMR – optional processing layer)
+- Logstash (Data Pipeline to OpenSearch)
+- Kibana (Visualization & Dashboarding)
+
 
 **Modern data Pipeline Tool:** https://www.mage.ai/
 
