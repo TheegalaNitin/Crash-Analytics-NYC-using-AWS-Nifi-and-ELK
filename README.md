@@ -8,7 +8,7 @@ The pipeline leverages Apache NiFi for ETL orchestration, Amazon S3 for data lak
 The goal is to transform raw API data into analytics-ready datasets and generate actionable insights through interactive dashboards.
 
 ## Architecture
-![Project Architecture](architecture.jpg)
+![Project Architecture](Architecture of NYC.png)
 
 ## Technology Used
 1. Programming Language - Python
