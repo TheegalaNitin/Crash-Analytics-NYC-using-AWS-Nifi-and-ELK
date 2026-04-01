@@ -42,15 +42,15 @@ This dataset contains detailed crash records including:
 
 ## Data Pipeline (ETL Flow)
 - Extract – Apache NiFi
- - Uses InvokeHTTP to fetch data from NYC Open Data API
- - Continuously ingests real-time crash data
+ * Uses InvokeHTTP to fetch data from NYC Open Data API
+ * Continuously ingests real-time crash data
 - Transform – Apache NiFi
- - EvaluateJSONPath → Extract relevant attributes
- - ReplaceText → Convert JSON → CSV
- - MergeContent → Combine records into structured datasets
+ * EvaluateJSONPath → Extract relevant attributes
+ * ReplaceText → Convert JSON → CSV
+ * MergeContent → Combine records into structured datasets
 - Load – Amazon S3
- - Processed CSV files stored in S3
- - Acts as a scalable data lake
+ * Processed CSV files stored in S3
+ * Acts as a scalable data lake
 
 ## Scripts for project
 1. [Extract Python File](mage-files/extract.py)
