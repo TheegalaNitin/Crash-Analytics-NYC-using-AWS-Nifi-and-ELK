@@ -52,12 +52,19 @@ This dataset contains detailed crash records including:
  * Processed CSV files stored in S3
  * Acts as a scalable data lake
 
-## Scripts for project
-1. [Extract Python File](mage-files/extract.py)
-2. [Load Python File](mage-files/load.py)
-3. [Transform Python File](mage-files/transform.py)
+## Initialising the EC2 instance and downloading Apache Nifi
+![EC2 initialisation and Nifi installation](https://github.com/TheegalaNitin/Crash-Analytics-NYC-using-AWS-Nifi-and-ELK/blob/main/Project%20screenshots%202/Picture1.png)
+
+## Setting up Nifi processors  working in tandem from extracting data from API to putting the parsed objects in S3 bucket
+![Apache Nifi processors](https://github.com/TheegalaNitin/Crash-Analytics-NYC-using-AWS-Nifi-and-ELK/blob/main/Project%20screenshots%202/Picture2.png) 
+
+## Visualising the data using Kibana 
+![Kibana Visualisation](https://github.com/TheegalaNitin/Crash-Analytics-NYC-using-AWS-Nifi-and-ELK/blob/main/Project%20screenshots%202/Picture3.png)
 
 
-## Complete Video Tutorial
-Video Link - https://www.youtube.com/watch?v=WpQECq5Hx9g
+
+
+## Conclusion and Reflection 
+
+This project has helped me understand the different tools available for performing ETL tasks. This was my first time using AWS cloud and tools associated with it. While I have done a lot of experimenting and didn't add many steps that I used. I request the readers to please refer to the repository Project Screenshots 2 for more detailed excution of the project. 
 
