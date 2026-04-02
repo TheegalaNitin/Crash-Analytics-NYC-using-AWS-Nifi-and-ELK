@@ -66,5 +66,9 @@ This dataset contains detailed crash records including:
 
 ## Conclusion and Reflection 
 
-This project has helped me understand the different tools available for performing ETL tasks. This was my first time using AWS cloud and tools associated with it. While I have done a lot of experimenting and didn't add many steps that I used. I request the readers to please refer to the repository Project Screenshots 2 for more detailed excution of the project. 
+This project has helped me understand the different tools available for performing ETL tasks. This was my first time using AWS cloud and tools associated with it. While I have done a lot of experimenting and didn't add many steps that I used. I request the readers to please refer to the repository Project Screenshots 2 (https://github.com/TheegalaNitin/Crash-Analytics-NYC-using-AWS-Nifi-and-ELK/tree/9948dafbc72c232e8f329e98b00bc8679f37f410/Project%20screenshots%202) for more detailed excution of the project. I didn't add them to the readme as it would be very lengthy. 
+
+## Credits:
+
+* I would like to thank Darshil Parmar on explaining how to use Github to showcase projects. The format for readme files is inspired from his work which I forked to suit my project. I would request readers to please support his work. https://youtube.com/@darshilparmar?si=T1SL0Di8-SH029zb
 
